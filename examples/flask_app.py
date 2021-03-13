@@ -36,12 +36,16 @@ serializer = lambda obj: isinstance(obj, (date, datetime, Decimal)) and str(obj)
 kite_api_key = "kite_api_key"
 kite_api_secret = "kite_api_secret"
 
+kite_api_key = "yu4viu4fusp4ofql"
+kite_api_secret = "b610n7lnsgaxvk139zw2motqnmz00iuq"
+
+
 # Create a redirect url
 redirect_url = "http://{host}:{port}/login".format(host=HOST, port=PORT)
 
 # Login url
 login_url = "https://api.kite.trade/connect/login?api_key={api_key}".format(api_key=kite_api_key)
-
+login_url = "https://kite.zerodha.com/connect/login?v=3&api_key={api_key}".format(api_key=kite_api_key)
 # Kite connect console url
 console_url = "https://developers.kite.trade/apps/{api_key}".format(api_key=kite_api_key)
 

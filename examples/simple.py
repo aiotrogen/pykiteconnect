@@ -3,7 +3,7 @@ from kiteconnect import KiteConnect
 
 logging.basicConfig(level=logging.DEBUG)
 
-kite = KiteConnect(api_key="your_api_key")
+kite = KiteConnect(api_key="yu4viu4fusp4ofql")
 
 # Redirect the user to the login url obtained
 # from kite.login_url(), and receive the request_token
@@ -11,7 +11,7 @@ kite = KiteConnect(api_key="your_api_key")
 # Once you have the request_token, obtain the access_token
 # as follows.
 
-data = kite.generate_session("request_token_here", secret="your_secret")
+data = kite.generate_session("request_token_here", api_secret="b610n7lnsgaxvk139zw2motqnmz00iuq")
 kite.set_access_token(data["access_token"])
 
 # Place an order
