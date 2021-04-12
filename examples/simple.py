@@ -10,8 +10,10 @@ kite = KiteConnect(api_key="yu4viu4fusp4ofql")
 # from the registered redirect url after the login flow.
 # Once you have the request_token, obtain the access_token
 # as follows.
+# https://kite.zerodha.com/connect/login?v=3&api_key=yu4viu4fusp4ofql
 
-data = kite.generate_session("Qu6vhZNmbXJEYohTNnpSHY0xFNXJoP3F", api_secret="b610n7lnsgaxvk139zw2motqnmz00iuq")
+
+data = kite.generate_session(request_token="4k5xWxu640JIT52ESMRaPYEgcg7gVPlL", api_secret="b610n7lnsgaxvk139zw2motqnmz00iuq")
 kite.set_access_token(data["access_token"])
 ''' 
 # Place an order
@@ -36,7 +38,7 @@ kite.orders()
 
 # Get instruments
 kite.instruments()
-
+'''
 # Place an mutual fund order
 kite.place_mf_order(
     tradingsymbol="INF090I01239",
@@ -44,9 +46,9 @@ kite.place_mf_order(
     amount=5000,
     tag="mytag"
 )
-
+'''
 # Cancel a mutual fund order
-kite.cancel_mf_order(order_id="order_id")
+# kite.cancel_mf_order(order_id="order_id")
 
 # Get mutual fund instruments
-kite.mf_instruments()
+# kite.mf_instruments()
