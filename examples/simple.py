@@ -11,9 +11,9 @@ kite = KiteConnect(api_key="yu4viu4fusp4ofql")
 # Once you have the request_token, obtain the access_token
 # as follows.
 
-data = kite.generate_session("request_token_here", api_secret="b610n7lnsgaxvk139zw2motqnmz00iuq")
+data = kite.generate_session("Qu6vhZNmbXJEYohTNnpSHY0xFNXJoP3F", api_secret="b610n7lnsgaxvk139zw2motqnmz00iuq")
 kite.set_access_token(data["access_token"])
-
+''' 
 # Place an order
 try:
     order_id = kite.place_order(
@@ -29,6 +29,7 @@ try:
     logging.info("Order placed. ID is: {}".format(order_id))
 except Exception as e:
     logging.info("Order placement failed: {}".format(e.message))
+'''
 
 # Fetch all orders
 kite.orders()
